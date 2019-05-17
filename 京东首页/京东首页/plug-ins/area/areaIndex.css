@@ -1,0 +1,40 @@
+#location{
+    position: relative;
+    
+}
+#location:hover .itemList{
+    display:block
+}
+#location img{
+    width:20px;
+    height:20px;
+}
+#location .itemList{
+    position: absolute;
+    border:1px solid #ddd;
+    background-color: #fff;
+    padding:10px;
+    display: none;
+    z-index:9999;
+}
+#location .itemList .item{
+    display: inline-block;
+    width:70px;
+    padding :10px;
+    cursor: pointer;
+}
+
+#location .itemList .item:hover{
+    background-color: #ddd;
+
+}
+#location .itemList .item:hover a{
+    color:red;
+}
+
+#location .itemList .item.nowActive{
+    background-color: red;
+}
+#location .itemList .item.nowActive a{
+    color:#fff;
+}

@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  outline: none;
+}
+html, body{
+  width:100%;
+  height:100%;
+  background: radial-gradient(circle at center, #045, #002);
+}
+.selector {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  width: 140px;
+  height:140px;
+  margin-left:-70px;
+  margin-top:-70px;
+}
+.selector button {
+  position: relative;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  border:0;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 14px #0cf inset;
+}
+.selector button:hover{
+  transition: all 1s;
+  box-shadow: 0 0 14px #ff0 inset;
+}
+.selector ul{
+  position:absolute;
+  top: -20px;
+  bottom: -20px;
+  left:-20px;
+  right:-20px;
+}
+.selector li {
+  position: absolute;
+  width:100%;
+  height:100%;
+  transition: all 0.8s ease-in-out;
+}
+ 
+.selector li input{
+  display: none;
+}
+.selector li label{
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  margin-left:0px;
+  width:0px;
+  height:0px;
+  background:#fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0px;
+  overflow: hidden;
+  box-shadow: none;
+  font-size: 0px;
+  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+}
+
+.selector li label:hover{
+  color: orange;
+}
+.selector li input:checked + label{
+  background: orange;
+  color: #fff;
+}
+.selector li input:checked + label:hover{
+  background: #ff6600;
+}
+.selector.open li label{
+  width:80px;
+  height:80px;
+  margin-left:-40px;
+  line-height: 80px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+} 

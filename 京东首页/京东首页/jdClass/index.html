@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <m eta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../plug-ins/carousel/carousel.css">
+        <link rel="stylesheet" href="../plug-ins/area/areaIndex.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- nav -->
+        <div class="shortcut">
+            <div class="w">
+                <div class="left">
+                    <div class="location" id="location"></div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="">你好，请登陆</a></li>
+                        <li><a href="">免费注册</a></li>
+                        <li>|</li>
+                        <li><a href="">我的订单</a></li>
+                        <li>|</li>
+                        <li id="mgJd"><a href="">我的京东</a></li>
+                        <li>|</li>
+                        <li><a href="">京东会员</a></li>
+                        <li>|</li>
+                        <li id="buy"><a href="">企业采购</a></li>
+                        <li>|</li>
+                        <li><a href="">客户服务</a></li>
+                        <li>|</li>
+                        <li id="nav"><a href="">网站导航</a></li>
+                        <li>|</li>
+                        <li class="phone">
+                            <a href="">手机京东</a>
+                            <div class="code">
+                                <img src="../jd/image/1.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo + input -->
+        <div class="header">
+            <div class="con">
+                <div class="logo"></div>
+                <div class="header-right">
+                    <div class="search">
+                        <input type="text" placeholder="手机" class="cj-input">
+                        <input type="button" value="搜索" class="cj-btn">
+                    </div>
+                    <div class="shopping">
+                        我的购物车
+                        <i class="ci-count">0</i>
+                    </div>
+                    <div class="hotwords">
+                        <a class="red" href="">重阳节礼物</a>
+                        <a href="">笔记本</a>
+                        <a href="">美妆护肤</a>
+                        <a href="">400减40</a>
+                        <a href="">进口美食</a>
+                        <a href="">活色生鲜</a>
+                        <a href="">苹果新品</a>
+                        <a href="">诺基亚X7</a>
+                        <a href="">秋游世界</a>
+                    </div>
+                    <div class="navItems">
+                        <ul>
+                            <li>秒杀
+                            </li>
+                            <li>优惠券
+                            </li>
+                            <li> PLUS会员
+                            </li>
+                            <li> 闪购</li>
+                        </ul>
+                        <ul class="line">|</ul>
+                        <ul>
+                            <li> 拍卖</li>
+                            <li> 京东服饰</li>
+                            <li> 京东超市
+                            </li>
+                            <li> 京东生鲜
+                            </li>
+                        </ul>
+                        <ul class="line">|</ul>
+                        <ul>
+                            <li> 全球购
+                            </li>
+                            <li> 京东金融</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="code">
+                        <img src="../jd/image/1.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- slider + img + user -->
+        <div class="content">
+            <div class="con">
+                <div class="menu">
+                    <div id="J_cate" class="cate J_cate cate18">
+                        <!-- 菜单列表部分 -->
+                        <ul class="JS_navCtn cate_menu">
+                            <li class="cate_menu_item" data-index="1" clstag="h|keycount|head|category_01a">
+                                <a target="_blank" class="cate_menu_lk" href="#">家用电器</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="2" clstag="h|keycount|head|category_02a">
+
+                                <a target="_blank" class="cate_menu_lk" href="#">手机</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="#">运营商</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="#">数码</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="3" clstag="h|keycount|head|category_03a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//diannao.jd.com/">电脑</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//bg.jd.com">办公</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="4" clstag="h|keycount|head|category_04a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/home.html">家居</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/furniture.html">家具</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/decoration.html">家装</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/kitchenware.html">厨具</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="5" clstag="h|keycount|head|category_05a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/1315-1342.html">男装</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/1315-1343.html">女装</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/children.html">童装</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/1315-1345.html">内衣</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="6" clstag="h|keycount|head|category_06a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//beauty.jd.com/">美妆</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/beauty.html">个护清洁</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/pet.html">宠物</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="7" clstag="h|keycount|head|category_07a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/womensshoes.html">女鞋</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/bag.html">箱包</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/watch.html">钟表</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/jewellery.html">珠宝</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="8" clstag="h|keycount|head|category_08a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/mensshoes.html">男鞋</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/yundongcheng.html">运动</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/outdoor.html">户外</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="9" clstag="h|keycount|head|category_09a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//realestate.jd.com/">房产</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//car.jd.com/">汽车</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//che.jd.com/">汽车用品</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="10" clstag="h|keycount|head|category_10a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//baby.jd.com">母婴</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//toy.jd.com/">玩具乐器</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="11" clstag="h|keycount|head|category_11a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/food.html">食品</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//jiu.jd.com">酒类</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//fresh.jd.com">生鲜</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//china.jd.com">特产</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="12" clstag="h|keycount|head|category_12a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//art.jd.com">艺术</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/1672-2599.html">礼品鲜花</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//nong.jd.com">农资绿植</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="13" clstag="h|keycount|head|category_13a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//health.jd.com">医药保健</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//channel.jd.com/9192-9196.html">计生情趣</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="14" clstag="h|keycount|head|category_14a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//book.jd.com/">图书</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//mvd.jd.com/">文娱</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//e.jd.com/ebook.html">电子书</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="15" clstag="h|keycount|head|category_15a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//jipiao.jd.com/">机票</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//hotel.jd.com/">酒店</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//trip.jd.com/">旅游</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//ish.jd.com/">生活</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="16" clstag="h|keycount|head|category_16a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//licai.jd.com/">理财</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//z.jd.com/">众筹</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//baitiao.jd.com">白条</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//bao.jd.com/">保险</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="17" clstag="h|keycount|head|category_17a">
+
+                                <a target="_blank" class="cate_menu_lk" href="//anzhuang.jd.com">安装</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="//jdwx.jd.com">维修</a>
+                                <span class="cate_menu_line">/</span>
+                                <a target="_blank" class="cate_menu_lk" href="#">清洗保养</a>
+                            </li>
+                            <li class="cate_menu_item" data-index="18" clstag="h|keycount|head|category_18a">
+
+                                <a target="_blank" class="cate_menu_lk" href="#">工业品</a>
+                            </li>
+                        </ul>
+                        <!-- 鼠标覆盖右侧显示区域 -->
+                        <div id="J_popCtn" class="JS_popCtn cate_pop">
+                            <div class="cate_part clearfix" id="cate_item1" data-id="a" style="display: none;">
+                                1
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item2" data-id="b" style="display: none;">
+                                2
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item3" data-id="c" style="display: none;">
+                                3
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item4" data-id="d" style="display: none;">
+                                4
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item5" data-id="e" style="display: none;">
+                                5
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item6" data-id="f" style="display: none;">
+                                6
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item7" data-id="g" style="display: none;">
+                                7
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item8" data-id="h" style="display: none;">
+                                8
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item9" data-id="i" style="display: none;">
+                                9
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item10" data-id="j" style="display: none;">
+                                10
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item11" data-id="k" style="display: none;">
+                                11
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item12" data-id="l" style="display: none;">
+                                12
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item13" data-id="m" style="display: none;">
+                                13
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item14" data-id="n" style="display: none;">
+                                14
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item15" data-id="o" style="display: none;">
+                                15
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item16" data-id="p" style="display: none;">
+                                16
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item17" data-id="q" style="display: none;">
+                                17
+                            </div>
+                            <div class="cate_part clearfix" id="cate_item18" data-id="r" style="display: none;">
+                                18
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider" id="swiper"></div>
+                <div class="ad">
+                    <div><img src="../jd/image/2.png" alt=""></div>
+                    <div><img src="../jd/image/3.png" alt=""></div>
+                    <div><img src="../jd/image/4.png" alt=""></div>
+                </div>
+                <div class="user">
+                    <div class="user-info">
+                        <div class="user_avatar_lk">
+                            <img src="http://misc.360buyimg.com/mtd/pc/common/img/no_login.jpg" alt="">
+                        </div>
+                        <div class="user_show">
+                            <p>Hi~欢迎来到京东！</p>
+                            <p>
+                                <a href="#">登陆</a>
+                                <a href="#">注册</a>
+                            </p>
+                        </div>
+                        <div class="profit">
+                            <div class="user_profit_lk">新人福利</div>
+                            <div class="plus">PLUS会员</div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="news2">
+                            <div class="news_hd">
+                                <h5 class="news_tit">京东快报</h5>
+                                <a href="#" target="_blank" class="news_more">更多</a>
+                            </div>
+                            <ul class="news_list">
+                                <li class="news_item news_item__0">
+                                    <a href="#" target="_blank" class="news_link">
+                                        <span class="news_tag">公告</span>VERTU 官方旗舰店入驻京东</a>
+                                </li>
+                                <li class="news_item news_item__1">
+                                    <a href="#" target="_blank" class="news_link">
+                                        <span class="news_tag">活动</span>优选好货</a>
+                                </li>
+                                <li class="news_item news_item__2">
+                                    <a href="#" target="_blank" class="news_link">
+                                        <span class="news_tag">热议</span>12小时破30亿！小米8刷新845底线成千元机被疯抢</a>
+                                </li>
+                                <li class="news_item news_item__3">
+                                    <a href="#" target="_blank" class="news_link">
+                                        <span class="news_tag">HOT</span>好消息！油价迎来新变动，92号汽油终于“苏醒”了</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- servers -->
+                    <div class="services">
+                        <div class="services_entry">
+                            <div class="item row1" id="huafei">
+                                <div class="huafei">
+                                </div>
+                                <p>话费</p>
+                            </div>
+                            <div class="item row1" id="jipiao">
+                                <div class="jipiao"></div>
+                                <p>机票</p>
+                            </div>
+                            <div class="item row1" id="jiudian">
+                                <div class="jiudian"></div>
+                                <p>酒店</p>
+                            </div>
+                            <div class="item row1" id="youxi">
+                                <div class="youxi"></div>
+                                <p>游戏</p>
+                            </div>
+                            <div class="item ">
+                                <div class="qiyegou"></div>
+                                <p>企业购</p>
+                            </div>
+                            <div class="item  ">
+                                <div class="jiayouka"></div>
+                                <p>加油卡</p>
+                            </div>
+                            <div class="item  ">
+                                <div class="dianyingpiao"></div>
+                                <p>电影票</p>
+                            </div>
+                            <div class="item">
+                                <div class="huochepiao"></div>
+                                <p>火车票</p>
+                            </div>
+                            <div class="item  ">
+                                <div class="zhongchou"></div>
+                                <p>众筹</p>
+                            </div>
+                            <div class="item ">
+                                <div class="licai"></div>
+                                <p>理财</p>
+                            </div>
+                            <div class="item ">
+                                <div class="lipinka"></div>
+                                <p>礼品卡</p>
+                            </div>
+                            <div class="item">
+                                <div class="baitiao"></div>
+                                <p>白条</p>
+                            </div>
+                        </div>
+                        <div class="services_content">
+                            <div class="header">
+                                <span class="active huafei_tab" data="huafei">话费</span>
+                                <span class="jipiao_tab" data="jipiao">机票</span>
+                                <span class="jiudian_tab" data="jiudian">酒店</span>
+                                <span class="youxi_tab" data="youxi">游戏</span>
+                            </div>
+                            <div class="close">x</div>
+                            <div class="content huafei_content" style="display:none">话费</div>
+                            <div class="content jipiao_content" style="display:none">机票</div>
+                            <div class="content jiudian_content" style="display:none">酒店</div>
+                            <div class="content youxi_content" style="display:none">游戏</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <script src="../jd/jquery-3.3.1.js"></script>
+        <script src="../plug-ins/carousel/carousel.js"></script>
+        <script src="../plug-ins/area/areaIndex.js"></script>
+        <script src="../plug-ins/list/list.js"></script>
+        <script src="./index.js"></script>
+        
+</body>
+
+</html>
