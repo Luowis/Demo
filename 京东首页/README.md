@@ -1,15 +1,16 @@
 # 京东首页练习
+
 **预览：**
 
 ![](./GitHubImg/jd.gif)
 ## 总结:
 * ### 运用
- 	1. jquery实现
-	2. $.fn.extend扩展功能：
+ 	* jquery实现
+	* $.fn.extend扩展功能：
 	   * 封装下拉列表插件（导航-我的京东，网站导航）
 	   * 封装滑动插件（左下角-话费，机票，酒店，游戏）
-	3. display: inline-block;与float:left;之间的选择
-	4. $('.nav-item',this.parent) // 两个参数的用法，第二个参数默认为当前的文档对象
+	* display: inline-block;与float:left;之间的选择
+	* $('.nav-item',this.parent) // 两个参数的用法，第二个参数默认为当前的文档对象
 
 * ### 拓展
 
