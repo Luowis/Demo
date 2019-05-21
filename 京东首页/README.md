@@ -6,9 +6,10 @@
 ## 总结:
 * ### 运用
  	* jquery实现
-	* $.fn.extend扩展功能：
+	* 利用jquery的$.fn.extend扩展功能：
 	   * 封装下拉列表插件（导航-我的京东，网站导航）
 	   * 封装滑动插件（左下角-话费，机票，酒店，游戏）
+	   * 调用淘宝接口封装关键词搜索功能(搜索框)
 	* display: inline-block;与float:left;之间的选择
 	* $('.nav-item',this.parent) // 两个参数的用法，第二个参数默认为当前的文档对象
 
