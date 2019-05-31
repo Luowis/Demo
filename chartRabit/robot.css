@@ -1,0 +1,152 @@
+*{
+	margin:0;
+	padding:0;
+	font-size:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#c3c3c3;
+	/* overflow:hidden; */
+}
+.wrapper{ 
+	width: 400px;
+	height: 600px;
+	padding:35px 0 35px 0;
+	background-color: #fff;
+	margin:10px auto;
+	border-radius: 20px;
+	box-sizing: border-box;
+
+}
+.wrapper .con{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-image: url('./img/bg.jpg');
+	background-size: cover;
+}
+.wrapper .con .name{
+	position: absolute;
+	top:0;
+	width:100%;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	color:#333;
+	font-weight:bold;
+	background-color:#ddd;
+	font-size:20px;
+}
+
+.wrapper .con .input-box{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:50px;
+	background-color:#ddd;
+}
+.wrapper .con .input-box .inp{
+	width:80%;
+	height:30px;
+	outline: none;
+	border:none;
+	text-indent:15px;
+	margin:10px 0 0 15px;
+	font-size:14px;
+}
+.wrapper .con .input-box .btn{
+	border:none;
+	outline:none;
+	padding:5px 10px;
+	background-color:#cccc;
+	color:#fff;
+	border-radius: 5px;
+	cursor:pointer;
+	font-size:14px;
+	margin-left:5px;
+}
+.chat-box{
+	width:100%;
+	height:calc(100% - 120px);
+	/*border:1px solid #000;*/
+	position:absolute;
+	top:60px;
+	left:0;
+	overflow-y: scroll;
+}
+.inner{
+	width:90%;
+	/*border:1px solid #000;*/
+	margin:0 auto;
+}
+::-webkit-scrollbar{
+	width:5px;
+	height:20px;
+	background-color: #fff;
+}
+.talk{
+	width:100%;
+	/*border:1px solid #000;*/
+	margin-bottom:8px;
+}
+.talk div{
+	display:inline-block;
+	vertical-align: middle;
+}
+.talk.my{
+	text-align:right;
+}
+.talk.rabit{
+	text-align:left;
+	
+}
+.talk.my .user{
+	float:right;
+	background-image:url('./img/me.jpg');
+
+}
+.talk .user{
+	width:40px;
+	height:40px;
+	/* background-color:red; */
+	background-size:cover;
+	background-image:url('./img/wife.jpg');
+}
+.talk.my::after{
+	content:'';
+	clear: both;
+	visibility: hidden;
+	display:block;
+	height:0;
+	
+}
+.talk .text{
+	max-width:230px;
+	background-color:#fff;
+	padding:0 10px;
+	border-radius:5px;
+	font-size:14px;
+	margin:0 15px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position:relative;
+}
+.talk .text::before{
+	position:absolute;
+	right:-20px;
+	top:50%;
+	margin-top:-10px;
+	display:block;
+	content:'';
+	width:0;
+	height:0;
+	border:10px solid transparent;
+	border-left:10px solid #fff;
+}
+.talk.rabit .text::before{
+	left:-20px;
+	border:10px solid transparent;
+	border-right:10px solid #fff;
+}
